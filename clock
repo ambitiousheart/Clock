@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class Clock(int newH,int newM,int newS){
+public:
+setTime(newH=0,newM=0,newS=0);
+showTime();
+private:
+int hour,minute,second;
+};
+void Clock::setTime(int newH,int newM,int newS){
+hour=newH;
+minute=newM;
+second=newS;
+}
+inline Clock::showTime{
+cout<<hour<<":"<<minute<<":"<<second<<endl;
+}
+int main(){
+Clock myClock;
+cout<<"The first time set and clock is:";
+myClock.setTime();
+myClock.showtime();
+cout<<"The second time set and time is:";
+myClock.setTime(8,30,30);
+myClock.showTime();
+return 0;
+}
